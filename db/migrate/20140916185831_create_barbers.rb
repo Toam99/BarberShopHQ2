@@ -7,9 +7,11 @@ class CreateBarbers < ActiveRecord::Migration
   		t.timestamps
   	end
 
-  	Barber.create :name => 'Jessie Pinkman'
-  	Barber.create :name => 'Walter White'
-  	Barber.create :name => 'Gus Fring'  	
+  	Barber.create :name => 'Arnold Springer'
+    Barber.create :name => 'Hans-Joachim Stroth'
+    Barber.create :name => 'Hans-Joachim Stroth'
+    Barber.create :name => 'Zeev Nedermann'
+    Barber.create :name => 'Alan Chop' 	
 
   end
 end

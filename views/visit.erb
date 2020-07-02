@@ -1,14 +1,13 @@
-<h2>Записаться</h2>
-<p>На этой странице вы сможете записаться к нам в Barber Shop</p>
-
+<h2>Register</h2>
+<p>On this page you can book with our Barber Shop</p>
 
 <script type="text/javascript">
 
 $(function() {
 
-  // тут я могу написать любой javascript код, который исполнится
-  // после загрузки страницы
-
+  // here I can write any javascript code, which executed
+  // after loading
+   
   $('#color').simplecolorpicker();
   $('#datetimepicker').datetimepicker();
 
@@ -20,23 +19,24 @@ $(function() {
 <form action="/visit" method="POST" role="form">
 
   <div class="form-group">
-    <label>Ваше имя</label>
-    <input name="client[name]" type="text" class="form-control" placeholder="Ваше имя" value="<%= @c.name %>">
+    <label>Your name</label>
+    <input name="client[name]" type="text" class="form-control" placeholder="Your name" value="<%= @c.name %>">
   </div>
 
   <div class="form-group">
-    <label>Ваш телефон</label>
-    <input name="client[phone]" type="text" class="form-control" placeholder="Ваш телефон" value="<%= @c.phone %>">
+    <label>Your phone</label>  
+    <input name="client[phone]" type="text" class="form-control" placeholder="Your phone" value="<%= @c.phone %>">
   </div>
 
   <div class="form-group">
-    <label>Когда вас ждать?</label>
-    <input id="datetimepicker" name="client[datestamp]" type="text" class="form-control" placeholder="Введите дату и время" value="<%= @c.datestamp %>">
-  </div>
+    <label>When to wait for you?</label>  
+    <input id="datetimepicker" name="client[datestamp]" type="text" class="form-control" placeholder="Enter date and time" value="<%= @c.datestamp %>">
+</div>
+
 
 
   <div class="form-group">
-    <label>В какие цвета хотите себя окрасить: </label>
+    <label>Which color hair you want: </label>
     <select id="color" name="client[color]">
       <option value="#7bd148">Green</option>
       <option value="#5484ed">Bold blue</option>
@@ -53,6 +53,6 @@ $(function() {
     </select>
   </div>
 
-  <button type="submit" class="btn btn-primary">Записаться</button>
+  <button type="submit" class="btn btn-primary">Register</button>
 
 </form>
